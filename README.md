@@ -43,6 +43,6 @@ Built with Go, GCP, and automated CI/CD pipelines, it reflects a real-world arch
 ### Local Run
 
 ```bash
-git clone https://github.com/yourusername/safeschool-datamonitor.git
+git clone https://github.com/MattaKacz/safeschool-datamonitor.git
 cd backend
 go run main.go
