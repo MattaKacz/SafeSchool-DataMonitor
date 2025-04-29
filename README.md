@@ -46,3 +46,28 @@ Built with Go, GCP, and automated CI/CD pipelines, it reflects a real-world arch
 git clone https://github.com/MattaKacz/safeschool-datamonitor.git
 cd backend
 go run main.go
+```
+
+## Docker Build & Run
+```bash
+docker build -t safeschool-monitor .
+docker run -p 8080:8080 safeschool-monitor
+```
+
+### API Usage
+POST /activity
+```bash
+{
+  "student_id": "123",
+  "url": "https://example.com",
+  "timestamp": "2025-04-29T14:00:00Z"
+}
+```
+GET /report
+
+Returns list of activities.
+
+## Deployment
+Handled via GitHub Actions to GCP Cloud Run.
+
+
